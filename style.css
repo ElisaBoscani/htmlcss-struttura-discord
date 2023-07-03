@@ -6,8 +6,9 @@
 }
 
 header {
-  height: 200px;
+  height: 300px;
   background-color: var(--hd--center);
+  padding-top: 20px;
 }
 nav {
   background-color: var(--hd--nav);
@@ -17,9 +18,14 @@ nav {
 span {
   width: 10%;
   height: 100%;
+  border: 3px dashed black;
 }
 main section {
   height: 400px;
+}
+footer {
+  height: 400px;
+  background-color: var(--fo--bg);
 }
 /* /endglobal */
 
@@ -36,12 +42,12 @@ main section {
   --sec--card: #85c0c6;
   --fo--bg: #4574fe;
   --fo--container: #a498a2;
-  --fo--row: #aaa8ad;
+  --fo--row: #d5d1da;
   --fo--col: #80d7ac;
   --fo--link: #d5b27a;
 }
 .border {
-  border: dotted black;
+  border: 3px dashed black;
 }
 .d_flex {
   display: flex;
@@ -71,14 +77,16 @@ nav div {
   align-items: center;
 }
 /* header */
-.container_content {
+/* .container_content {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; */
+
 .container_content section {
-  width: 300px;
-  height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 500px;
+  height: 200px;
   background-color: var(--hd--center--cont);
 }
 /* end header */
@@ -118,4 +126,51 @@ nav div {
   width: 90%;
   height: 65px;
   background-color: var(--sec--card);
+}
+/* last section */
+
+.height {
+  height: 300px;
+}
+/* end main */
+/* footer link */
+.cont_footer {
+  background-color: var(--fo--container);
+  margin-top: 0;
+  padding-top: 25px;
+  height: 350px;
+}
+.row_footer {
+  background-color: var(--fo--row);
+
+  height: 250px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start;
+}
+.row_footer div {
+  height: 150px;
+  width: 19%;
+  background-color: var(--fo--link);
+  border: 3px dashed black;
+}
+.row_footer div:first-child {
+  width: 22%;
+  background-color: var(--fo--col);
+  margin-left: 0;
+}
+/* end footer link */
+/* footer sidebar*/
+.sidebar {
+  background-color: var(--fo--row);
+  height: 45px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar span {
+  background-color: var(--fo--link);
+  height: 85%;
 }
