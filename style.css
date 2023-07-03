@@ -9,6 +9,7 @@ header {
   height: 300px;
   background-color: var(--hd--center);
   padding-top: 20px;
+  margin-bottom: 10px;
 }
 nav {
   background-color: var(--hd--nav);
@@ -22,6 +23,9 @@ span {
 }
 main section {
   height: 400px;
+}
+main section:nth-child(2) {
+  height: 600px;
 }
 footer {
   height: 400px;
@@ -77,10 +81,6 @@ nav div {
   align-items: center;
 }
 /* header */
-/* .container_content {
-  display: flex;
-  justify-content: center;
-  align-items: center; */
 
 .container_content section {
   margin: 0 auto;
@@ -98,7 +98,7 @@ nav div {
   margin: 0 auto;
   margin-top: 45px;
   padding-top: 30px;
-  height: 200px;
+  height: 280px;
   background-color: var(--sec--container);
 }
 
@@ -107,31 +107,38 @@ nav div {
   justify-content: center;
   align-items: center;
   background-color: var(--sec--row);
-  height: 150px;
+  height: 225px;
 }
 
 .col {
   width: 60%;
-  height: 100px;
+  height: 175px;
   background-color: var(--sec--col);
 }
 
 .col_2 {
   width: 40%;
-  height: 100px;
+  height: 175px;
   background-color: var(--sec--col);
 }
 
 .card {
   width: 90%;
-  height: 65px;
+  height: 120px;
   background-color: var(--sec--card);
 }
-/* last section */
 
-.height {
-  height: 300px;
+.mrg {
+  margin-top: 20px;
 }
+/* last section */
+main section:last-child {
+  height: 700px;
+}
+.height {
+  height: 500px;
+}
+
 /* end main */
 /* footer link */
 .cont_footer {
@@ -156,7 +163,7 @@ nav div {
   border: 3px dashed black;
 }
 .row_footer div:first-child {
-  width: 22%;
+  width: 30%;
   background-color: var(--fo--col);
   margin-left: 0;
 }
